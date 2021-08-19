@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" >
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="dropdown-item" th:href="@{/}" style="color:white;">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" th:href="@{/}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gestion Clients</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" th:href="@{/clients/add}">Ajouter Client</a>
+                    <a class="dropdown-item" th:href="@{/clients/list}">List Clients</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gestion Médecins</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown02">
+                    <a class="dropdown-item" th:href="@{/medecins/add}">Ajouter Médecin</a>
+                    <a class="dropdown-item" th:href="@{/medecins/list}">List Médecins</a>
+                    <a class="dropdown-item" th:href="@{/medecins/find}">Recheche par specialité</a>
+                    <a class="dropdown-item" th:href="@{/medecins/advancedfind}">Recheche avancée</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gestion des Rendez-vous</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown03">
+                    <a class="dropdown-item" th:href="@{/rdv/add}">Ajouter rendez-vous</a>
+                    <a class="dropdown-item" th:href="@{/rdv/list}">List rendez-vous</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
